@@ -1,2 +1,2 @@
 # To-Do-List
- Web app to add and delete tasks
+Web app to add and delete tasks
