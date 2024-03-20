@@ -123,7 +123,7 @@ function renderTasks(tasks) {
 
         // task container div
         const taskDiv = document.createElement('div');
-        taskDiv.classList.add('task-item', 'input-style');
+        taskDiv.classList.add('task-item');
         taskDiv.appendChild(input);
         taskDiv.appendChild(label);
         taskDiv.appendChild(icon);
@@ -216,16 +216,19 @@ function completed() {
     // tasks = completedTasks.concat(incompleteTasks);
     renderTasks(completedTasks);
 }
-// Add event listener to todo button
-const todoButton = document.querySelector('.todo-button');
-todoButton.addEventListener('click', addTodo);
 
-// Add event listener to input field to detect "Enter" key press
 const todoInput = document.querySelector('.todo-input');
 todoInput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         addTodo();
     }
 });
+
+// Event listener to todo button
+const todoButton = document.querySelector('.todo-button');
+todoButton.addEventListener('click', addTodo);
+
+
+
 // Initial rendering
 renderTasks(tasks);
