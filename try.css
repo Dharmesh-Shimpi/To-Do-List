@@ -128,6 +128,9 @@
 .button-icon {
     font-size: 1.2rem;
 }
+.input-icon {
+    left: -1%;
+}
 .delete-icon{
     font-size: 0;
 }
@@ -148,7 +151,7 @@
 .task-label {
     position: absolute;
     left: 10%;
-    max-width: fit-content;
+    overflow-block:clip;
     transition: all 0.3s ease-in-out;
 }
 .footer-container {
@@ -240,6 +243,7 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Mobile Responsive Styles */
 @media only screen and (max-width: 500px) {
     .todo-form {
         width: 95%;
